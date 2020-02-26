@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import Timer from './Timer';
 import './style.css';
+import ErrorHandler from './ErrorHandler';
 
 class App extends Component {
   constructor() {
@@ -24,4 +25,4 @@ class App extends Component {
   }
 }
 
-render(<Timer />, document.getElementById('root'));
+render(<ErrorHandler><Timer/></ErrorHandler>, document.getElementById('root'));

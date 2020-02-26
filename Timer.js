@@ -30,10 +30,17 @@ ComponentWillUnmount(){
   clearInterval(this.interval)
 }
 render(){
+  //Error handling
+  if(this.state.count > 5){
+    throw new Error('Count canot be greater than 5')
+  }
   return(
     <div>
      <h2>Seconds Elapsed:
      {this.state.secondsElapsed}</h2>
+     <h3>{this.state.count}</h3><br/>
+     <button onClick={this.start}>Update</button>
+
      <Updates new = {this.state.count} />
     </div>
   )
