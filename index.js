@@ -5,6 +5,8 @@ import Timer from './Timer';
 import './style.css';
 import ErrorHandler from './ErrorHandler';
 import Employee from './Employee';
+import Products from './Products';
+import Login from './Login'
 
 class App extends Component {
   constructor() {
@@ -26,4 +28,4 @@ class App extends Component {
   }
 }
 
-render(<Employee/>, document.getElementById('root'));
+render(<Login/>, document.getElementById('root'));
