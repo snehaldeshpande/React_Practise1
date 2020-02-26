@@ -4,6 +4,7 @@ import Hello from './Hello';
 import Timer from './Timer';
 import './style.css';
 import ErrorHandler from './ErrorHandler';
+import Employee from './Employee';
 
 class App extends Component {
   constructor() {
@@ -25,4 +26,4 @@ class App extends Component {
   }
 }
 
-render(<ErrorHandler><Timer/></ErrorHandler>, document.getElementById('root'));
+render(<Employee/>, document.getElementById('root'));
